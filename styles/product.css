@@ -1,0 +1,101 @@
+.show-product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;        
+    width: fit-content;         
+    margin: 0 auto;             
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    padding: 50px;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    min-width: 600px;
+    margin-left: 40px;
+}
+.img-container {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+.next-img {
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.5s ease;
+}
+.next-img:hover {
+    opacity: 1;
+}
+.img-container img{
+    width: 90%;
+    object-fit: cover; 
+}
+.product-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.heart-cont {
+    width: 30px;
+    object-fit: cover;
+    opacity: 0.4;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.heart-cont:hover {
+    opacity: 1;
+}
+.product-price {
+    display:flex;
+    font-size: 50px;
+    justify-content: flex-end;
+    padding: 50px;
+}
+.q-container {
+    display: flex;
+    border-bottom: 2px solid rgb(168, 166, 166);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+
+}
+.qty-change {
+    background-color: white;
+    border:none;
+    padding-top:5px;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.qty-label{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.button-price{
+    display:flex;
+    background-color: white;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Playfair Display;
+    width:200px;
+    transition: 0.6s ease;
+    padding: 20px;
+    margin-right:50px;
+    transition: 0.6s ease;
+    border: 2px solid rgb(168, 166, 166);
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+}
+.button-price:hover {
+    background-color: black;
+    color:white;
+}
