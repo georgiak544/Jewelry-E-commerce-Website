@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShinnyTreasures</title>
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/categories.css">
+        <link rel="stylesheet" href="styles/product.css">
+        <link rel="stylesheet" href="styles/check-out.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    </head>
+    <script type="module" src="products.js"></script>
+    <body>
+        <div class="top-header">
+            <div>
+                <p class="top-header-text">FREE SHIPPING FOR ORDERS OVER $129</p>
+            </div>
+            <div >
+              <button class="sign-in">Sign-in</button>  
+            </div>
+        </div>
+
+        <div class="header">
+            <p class="logo">ShinyTreasures</p>
+            <div class="middle"> </div>
+            <div class="right">
+                <div class="search-bar-box">
+                    <input  type="search" class="search-bar" placeholder="Search">
+                </div>
+                <div class="icons">
+                    <button class="buttons button-search"></button>
+                    <button class="buttons button-heart"> </button>
+                    <div class="bag-quantity">
+                        <a class="bag-link" href="check-out.html">
+                            <div >
+                                <button class="buttons button-shop-bag"></button>
+                            </div>
+                            <div class="full-shop-bag js-bag-quantity">0</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories">
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" onclick="window.location.href='main-website.html?category=all'">All</button>
+            </div>
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" onclick="window.location.href='main-website.html?category=necklace'">Necklaces</button>
+            </div>
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" onclick="window.location.href='main-website.html?category=ring'">Rings</button>
+            </div>
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" onclick="window.location.href='main-website.html?category=bracelet'">Bracelets</button>
+            </div>
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" onclick="window.location.href='main-website.html?category=earring'">Earrings</button> 
+            </div>
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category"onclick="window.location.href='main-website.html?category=offer'"><strong>Offers</strong></button>
+            </div>  
+        </div>
+        <div class="show-product-container js-show">
+            
+            </div>
+        </div>
+        <script type="module" src="product.js"></script>
+        
+       
+    </body>
+    
+</html>
+
+    

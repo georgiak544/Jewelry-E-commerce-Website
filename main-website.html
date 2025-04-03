@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShinyTreasures</title>
+        <link rel="stylesheet" href="styles/filters.css">
+        <link rel="stylesheet" href="styles/categories.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/products.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="top-header">
+            <div>
+                <p class="top-header-text">FREE SHIPPING FOR ORDERS OVER $129</p>
+            </div>
+            <div >
+              <button class="sign-in">Sign-in</button>  
+            </div>
+        </div>
+
+        <div class="header">
+            <p class="logo">ShinyTreasures</p>
+            <div class="middle"> </div>
+            <div class="right">
+                <div class="search-bar-box">
+                    <input  type="search" class="search-bar" placeholder="Search">
+                </div>
+                <div class="icons">
+                    <button class="buttons button-search"></button>
+                    <button class="buttons button-heart"> </button>
+                    <div class="bag-quantity">
+                        <a class="bag-link" href="check-out.html">
+                            <div >
+                                <button class="buttons button-shop-bag"></button>
+                            </div>
+                            <div class="full-shop-bag js-bag-quantity">0</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories">
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" data-category="all">All</button>
+            </div>
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" data-category="necklace">Necklaces</button>
+            </div>
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" data-category="ring">Rings</button>
+            </div>
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" data-category="bracelet">Bracelets</button>
+            </div>
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" data-category="earring">Earrings</button> 
+            </div>
+            <div class="sparkle-category">
+                <img src="icons/sparkle.png" class="sparkle">
+                <button class="category" data-category="offer"><strong>Offers</strong></button>
+            </div>  
+        </div>
+        <div class="category-title-container js-category-title">
+            <p class="category-title"></p>
+        </div>
+
+            <div class="filter-container ">
+                <div class="filter-text" 
+                style="color: rgb(124, 124, 124);"
+                >Filter By:</div>
+                <div class="color-container">
+                    <div class="filter-text">Color:</div>
+                    <button class="color-button silver" data-color="silver"></button>
+                    <button class="color-button gold" data-color="gold"></button>
+                </div>
+                <div class="price-container">
+                    <div class="filter-text">Price:</div>
+                    <input type="range" id="js-slider-price" class="slider" name="price" min="0" max="200">
+                    <span id="js-price-value" class = "price">100$</span>
+                </div>
+                
+            <div class="sort-container">
+                <label class="filter-text" for="sort-options">Sort By:</label>
+                <select id="sort-options">
+                    <option value="price-low-high"> Low to High ($)</option>
+                    <option value="price-high-low"> High to Low ($)</option>
+                </select>
+            </div>
+      </div>
+        
+            </div>
+            <div class="products-container">
+                <div class="products js-products-grid"> </div>
+            </div>
+
+        
+        <script type="module" src="main-website.js"></script>
+    </body>
+</html>
